@@ -203,7 +203,7 @@ def Modo_manual():
         st.dataframe(filtrado_df, width=1200)
         st.markdown("<h5 style='text-align: center; color: black;'>Tabela Completa</h5>", unsafe_allow_html=True)
         st.dataframe(acoes_df, width=900)
-        st.stop()
+        
 
 
 
