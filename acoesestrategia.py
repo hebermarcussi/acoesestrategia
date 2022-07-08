@@ -145,7 +145,7 @@ def Modo_manual():
         selecao = st.selectbox('Selecione a ação', acoes)
         
         Botao_filtrar = st.form_submit_button('Filtrar')
-        st.stop()
+        
 
     if Botao_filtrar == True:
         data_incio = pd.to_datetime(data_incio)
