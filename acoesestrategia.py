@@ -135,6 +135,19 @@ if Pagina == 'Modo Manual':
                     'VBBR3.SA'	,
                     'WEGE3.SA'	,
                     'YDUQ3.SA'  ,
+                    'CBAV3.SA'  ,
+                     'NUBR33.SA',
+                     'MEGA3.SA' ,
+                     'PARD3.SA' , 
+                     'BOAS3.SA' ,
+                     'IVVB11.SA',
+                     'LOGG3.SA' ,
+                     'LOGN3.SA' ,
+                     'CEAB3.SA' ,
+                     'SEQL3.SA' ,
+                     'ANIM3.SA' ,
+                     'ABCB4.SA' ,
+                     'BLAU3.SA' ,
                     'AALR3.SA']
         col1, col2 = st.columns(2)
         with col1:
