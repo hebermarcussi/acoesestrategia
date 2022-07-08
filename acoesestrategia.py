@@ -134,8 +134,8 @@ def Modo_manual():
                     'CEAB3.SA'   ,
                     'SEQL3.SA'   ,
                     'ANIM3.SA'   ,
-                    'ABCB4.SA    ,
-                    'BLAU3.SA    ,
+                    'ABCB4.SA'    ,
+                    'BLAU3.SA'    ,
                     'AALR3.SA']
         col1, col2 = st.columns(2)
         with col1:
