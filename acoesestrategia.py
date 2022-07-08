@@ -123,6 +123,19 @@ def Modo_manual():
                     'VBBR3.SA'	,
                     'WEGE3.SA'	,
                     'YDUQ3.SA'  ,
+                    'CBAV3.SA'   ,
+                    'NUBR33.SA'  ,
+                    'MEGA3.SA'   ,
+                    'PARD3.SA'   ,
+                    'BOAS3.SA'   ,
+                    'IVVB11.SA'  ,
+                    'LOGG3.SA'   ,
+                    'LOGN3.SA'   ,
+                    'CEAB3.SA'   ,
+                    'SEQL3.SA'   ,
+                    'ANIM3.SA'   ,
+                    'ABCB4.SA    ,
+                    'BLAU3.SA    ,
                     'AALR3.SA']
         col1, col2 = st.columns(2)
         with col1:
@@ -131,6 +144,7 @@ def Modo_manual():
             porcentagem = st.number_input('Adicione a % queda', max_value=0.00)
         selecao = st.selectbox('Selecione a ação', acoes)
         Botao_filtrar = st.form_submit_button('Filtrar')
+    st.stop()
     if Botao_filtrar == True:
         data_incio = pd.to_datetime(data_incio)
         data_Fim = pd.to_datetime(data_Fim)
@@ -187,6 +201,7 @@ def Modo_manual():
         st.dataframe(filtrado_df, width=1200)
         st.markdown("<h5 style='text-align: center; color: black;'>Tabela Completa</h5>", unsafe_allow_html=True)
         st.dataframe(acoes_df, width=900)
+        st.stop()
 
 
 
