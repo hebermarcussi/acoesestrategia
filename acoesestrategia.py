@@ -143,8 +143,9 @@ def Modo_manual():
         with col2:
             porcentagem = st.number_input('Adicione a % queda', max_value=0.00)
         selecao = st.selectbox('Selecione a ação', acoes)
-        st.stop()
+        
         Botao_filtrar = st.form_submit_button('Filtrar')
+        st.stop()
 
     if Botao_filtrar == True:
         data_incio = pd.to_datetime(data_incio)
