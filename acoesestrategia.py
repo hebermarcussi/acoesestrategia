@@ -6,15 +6,7 @@ import plotly.express as px
 import datetime as dt 
 from datetime import date, timedelta
 
-
-
-
-
-    
-st.sidebar.title('estrategia Açoes')
-Pagina = st.sidebar.radio('',['Modo Automatico', 'Modo Manual'])
-
-if Pagina == 'Modo Automatico':
+def Modo_automatico():
     col1, col2, col3 = st.columns([2,2,1])
    
     with col2:
@@ -24,12 +16,8 @@ if Pagina == 'Modo Automatico':
     st.markdown('---')
     st.markdown("<h5 style='text-align: center; color: black;'>inicio</h5>", unsafe_allow_html=True)
 
+def Modo_manual():
 
-    
-
-
-
-if Pagina == 'Modo Manual':
     col1, col2, col3 = st.columns([2,2,1])
    
     with col2:
@@ -135,19 +123,6 @@ if Pagina == 'Modo Manual':
                     'VBBR3.SA'	,
                     'WEGE3.SA'	,
                     'YDUQ3.SA'  ,
-                    'CBAV3.SA'  ,
-                     'NUBR33.SA',
-                     'MEGA3.SA' ,
-                     'PARD3.SA' , 
-                     'BOAS3.SA' ,
-                     'IVVB11.SA',
-                     'LOGG3.SA' ,
-                     'LOGN3.SA' ,
-                     'CEAB3.SA' ,
-                     'SEQL3.SA' ,
-                     'ANIM3.SA' ,
-                     'ABCB4.SA' ,
-                     'BLAU3.SA' ,
                     'AALR3.SA']
         col1, col2 = st.columns(2)
         with col1:
@@ -213,6 +188,17 @@ if Pagina == 'Modo Manual':
         st.markdown("<h5 style='text-align: center; color: black;'>Tabela Completa</h5>", unsafe_allow_html=True)
         st.dataframe(acoes_df, width=900)
 
+
+
+def main():
+    
+    st.sidebar.title('estrategia Açoes')
+    Pagina = st.sidebar.radio('',['Modo Automatico', 'Modo Manual'])
+
+    if Pagina == 'Modo Automatico':
+        Modo_automatico()
+    if Pagina == 'Modo Manual':
+        Modo_manual()
     
 
-
+main()
